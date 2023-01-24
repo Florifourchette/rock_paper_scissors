@@ -1,5 +1,7 @@
 const playerChoice = "rock";
-const computerChoice = "paper";
+const possibleChoice = ["paper","rock","scissors"]
+const i=Math.floor(Math.random() * 3);
+const computerChoice = possibleChoice[i];
 let ComputerWon=0;
 let PlayerWon=0;
 
@@ -57,8 +59,9 @@ else if (playerInput==="scissors"){
 else{
     console.log("I did not get what you meant");
 }
-console.log(i);
     }
 
+console.log("You played "+playerChoice)
+console.log("Computer played "+computerChoice)
 game(computerChoice,playerChoice);
 
