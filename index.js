@@ -1,4 +1,6 @@
-const playerChoice = "rock";
+let person = prompt("What do you want to play?");
+
+const playerChoice = person.toLowerCase();
 const possibleChoice = ["paper","rock","scissors"]
 const i=Math.floor(Math.random() * 3);
 const computerChoice = possibleChoice[i];
