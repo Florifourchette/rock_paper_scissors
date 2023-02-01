@@ -24,9 +24,7 @@ let game = function (computerInput, playerInput) {
         default: 
         result = "Computer is confused";
     }
-    console.log("You played "+playerInput);
-    console.log("Computer played "+computerInput);
-    console.log(result);
+    document.write("You played "+playerInput+"<br>Computer played "+computerInput+"<br> and the result is "+result);
 }
 else if (playerInput==="paper"){
     switch (computerInput) {
@@ -42,9 +40,7 @@ else if (playerInput==="paper"){
         default: 
         result = "Computer is confused";
     }
-    console.log("You played "+playerInput);
-    console.log("Computer played "+computerInput);
-    console.log(result);
+    document.write("You played "+playerInput+"<br>Computer played "+computerInput+"<br> and the result is "+result);
 }
 else if (playerInput==="scissors"){
     switch (computerInput) {
@@ -60,12 +56,10 @@ else if (playerInput==="scissors"){
         default: 
         result = "Computer is confused";
     }
-    console.log("You played "+playerInput);
-    console.log("Computer played "+computerInput);
-    console.log(result);
+    document.write("You played "+playerInput+"<br>Computer played "+computerInput+"<br> and the result is "+result);
 }
 else{
-    console.log("I did not get what you meant");
+    document.write("I did not get what you meant");
 }
     }
 
